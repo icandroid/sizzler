@@ -40,6 +40,7 @@ class NonceManagement:
         self.nonces.append(nonce)
         return True
 
+    @asyncio.coroutine
     def __await__(self):
         while True:
             # recalculate acceptable nonce time
